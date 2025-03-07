@@ -1,0 +1,31 @@
+.icon-wrapper{
+    width: 35px;
+    height: 35px;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+[data-theme]:not([data-theme='dark']) .icon-wrapper{
+    background-color: transparent;
+}
+.icon-wrapper img{
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s ease-in-out;
+}
+.icon-wrapper img:hover{
+    transform: translateY(-5px);
+}
+
+.icons-wrapper {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    max-width: 165px; 
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,35 @@
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+    padding-top: 100px;
+
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;    
+}
+
+.hero-text h1{
+    margin-bottom: 8px;            
+}
+.hero-text h4{
+    color: rgb(var(--accent-color));
+}
+
+.hero-text p{
+    margin-bottom: 5px;
+}
+
+.hero-img{
+    width: 200px;
+    padding-left: 20px;
+}
+
+
+.hero-bio{
+    padding-top: 8px;
+}
+

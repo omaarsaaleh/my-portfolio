@@ -1,0 +1,58 @@
+.page-container {
+    margin: 0 auto;
+    padding: 0px 15px;
+    height: 100%;
+    width: 90%; 
+    max-width: 1400px;
+    
+    /* added */
+    display: flex ;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Extra Small (Phones) - Less than 576px */
+@media (max-width: 575px) {
+    .page-container {
+        width: 95%;
+        padding: 0px 10px; /* Adjust padding for small screens */
+    }
+}
+
+/* Small (Small Tablets, Large Phones) - 576px to 767px */
+@media (min-width: 576px) and (max-width: 767px) {
+    .page-container {
+        width: 95%;
+        padding: 0px 12px;
+    }
+}
+
+/* Medium (Tablets, Small Laptops) - 768px to 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+    .page-container {
+        width: 90%;
+        padding: 0px 15px;
+    }
+}
+
+/* Large (Desktops, Large Tablets) - 992px to 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .page-container {
+        width: 85%;
+    }
+}
+
+/* Extra Large (Larger Desktops) - 1200px to 1399px */
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .page-container {
+        width: 80%;
+    }
+}
+
+/* Extra Extra Large (Very Large Screens, TVs) - 1400px+ */
+@media (min-width: 1400px) {
+    .page-container {
+        width: 75%;
+        max-width: 1600px; /* Increase max-width for better layout */
+    }
+}

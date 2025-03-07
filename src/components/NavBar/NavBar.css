@@ -1,0 +1,220 @@
+nav {
+    padding: 20px 0;
+    position: fixed;
+    top:0;
+    background-color: var(--background-color);
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+    color: var(--heading-color);
+}
+
+.nav-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-grow: 1;
+
+}
+.nav-links li{
+    margin: 0 10px;
+}
+
+.nav-icons{
+    display: flex;
+}
+
+.nav-icons svg{
+    width: 22px;
+    height: 22px;
+    fill: var(--heading-color);
+    background-color: transparent;
+}
+
+#hamburger-icon{
+    display: none;
+}
+
+.nav-icons button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: inherit;    
+}
+
+
+nav ul li {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+nav ul li:not(.active-element):hover, .nav-menu li:not(.active-element):hover {
+    color: rgb(var(--text-color));
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 575px) {
+    nav {
+        width: 95%;
+        padding: 12px 0;
+
+    }
+    nav ul li{
+        font-size: 0.8rem;
+    }
+    .nav-links{
+        display: none;
+    }
+    #hamburger-icon{
+        display: block;
+    }
+}
+
+/* Small (Small Tablets, Large Phones) - 576px to 767px */
+@media (min-width: 575px) and (max-width: 768px) {
+    nav {
+        width: 95%;
+    }
+    .nav-links{
+        display: none;
+    }
+    #hamburger-icon{
+        display: block;
+    }
+}
+
+/* Medium (Tablets, Small Laptops) - 768px to 991px */
+@media (min-width: 768px) and (max-width: 992px) {
+    nav {
+        width: 90%;
+    }
+}
+
+/* Large (Desktops, Large Tablets) - 992px to 1199px */
+@media (min-width: 992px) and (max-width: 1200px) {
+    nav {
+        width: 85%;
+    }
+}
+
+/* Extra Large (Larger Desktops) - 1200px to 1399px */
+@media (min-width: 1200px) and (max-width: 1399px) {
+    nav{
+        width: 80%;
+    }
+}
+
+/* Extra Extra Large (Very Large Screens, TVs) - 1400px+ */
+@media (min-width: 1400px) {
+    nav {
+        width: 75%;
+        max-width: 1600px; 
+    }
+}
+
+.active-element{
+    color: rgb(var(--accent-color));
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-menu {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    width: 100%;
+    max-width: 300px;
+    z-index: 3;
+    color: var(--heading-color);
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+}
+
+.nav-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.nav-menu .close-btn{
+    margin: -50px auto 10px auto ;
+    background-color: var(--background-tent-color);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+}
+
+.nav-menu .close-btn p{
+    margin: 0 auto;
+}
+
+.nav-menu ul{
+    background-color: var(--background-tent-color);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* display: none; */
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    
+    padding: 20px 0;
+
+}
+
+.nav-menu ul li{
+    font-weight:500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.nav-menu ul li a{
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,0 +1,155 @@
+*, ::after, ::before{
+    border: 0 solid #e5e7eb;
+}
+
+:root {
+    font-family: "Rubik", sans-serif;
+
+    --background-color: #fff;
+    --background-tent-color: #fff;
+    --text-color: 87, 87, 94;
+    --heading-color: #000;
+    --accent-color: 28, 138, 255;
+    --hover-color: rgba(54, 68, 89, 0.046);
+    --hover-box-shadow-color: rgba(99, 109, 124, 0.1);
+
+    
+    color-scheme: light dark;
+    
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[data-theme='dark'] {
+    --background-color: rgb(19 19 19 );
+    --background-tent-color: rgb(30 30 30);
+    --text-color: 212, 212, 212;
+    --heading-color: #fff ;
+    --accent-color: 242, 48, 48 ;
+    --shade-accent-color: rgb(94, 234, 212);
+    --hover-color: rgba(30, 30, 30, 0.4);
+    --hover-box-shadow-color: rgba(138, 152, 172, 0.1);
+}
+*{
+    transition: background-color 0.3s ease-in-out;
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+p, span {
+    color: rgb(var(--text-color));
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color);
+}
+
+.subheading {
+    color: rgb(var(--text-color));
+}
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+}
+
+
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection {
+    background-color: rgb(var(--accent-color));
+    color: var(--background-color);
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+img{
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+.text-xs { font-size: 0.75rem; }
+.text-sm { font-size: 0.875rem; }
+.text-base { font-size: 1rem; }
+.text-lg { font-size: 1.125rem; }
+.text-xl { font-size: 1.25rem; }
+.text-2xl { font-size: 1.5rem; }
+.text-3xl { font-size: 1.875rem; }
+.text-4xl { font-size: 2.25rem; }
+
+@media (max-width: 575px) {
+    h1{
+        font-size: 38px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    h4{
+        font-size: 22px;
+    }
+    h5{
+        font-size: 18px;
+    }
+    h6{
+        font-size: 14px;
+    }
+    .text-base{
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .text-sm{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .text-xs{
+        font-size: 10px;
+        line-height: 12px;
+    }
+   
+
+
+}
+
+hr{
+    border: none; 
+    border-top: 1px solid rgba(var(--text-color), 0.3);
+}
