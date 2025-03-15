@@ -1,7 +1,6 @@
 import './Hero.css';
 import { useQuery } from "@tanstack/react-query";
 import { getHero } from '../../APIs/hero';
-import Loader from '../Loader/Loader.jsx'
 
 export default function Hero() {
     const { data: heroData = {}, isLoading } = useQuery({
@@ -10,8 +9,15 @@ export default function Hero() {
         staleTime: Infinity,
     });
 
-    if(isLoading){
-        return <Loader></Loader>
+    if (isLoading) {
+        return (
+            <div className='hero'>
+                <div className='hero-text'>
+                    <div className='skeleton-box' style={{ width: '60%', height: '40px' }}>&nbsp;</div>
+                    <div className='skeleton-box' style={{ width: '40%', height: '20px' }}>&nbsp;</div>
+                </div>
+            </div>
+        );
     }
 
 
@@ -22,9 +28,6 @@ export default function Hero() {
                 <h4>
                     {heroData.profession}
                 </h4>
-                <p className="hero-bio text-base">
-                    {heroData.bio}
-                </p>
             </div>
         </div>
     );

@@ -11,7 +11,18 @@ export default function Education(){
     });
 
     if(isLoading){
-        return <Loader></Loader>
+        return (
+            <div className="education-section">
+                <div className="education-card skeleton">
+                    <div className="skeleton-box" style={{ width: '20%', height: '16px' }}></div>
+                    <div className="skeleton-box" style={{ width: '60%', height: '24px' }}></div>
+                    <div className="skeleton-box" style={{ width: '30%', height: '18px' }}></div>
+                    <div className="skeleton-box" style={{ width: '100%', height: '66px' }}></div>
+                    <div className="skeleton-box" style={{ width: '40%', height: '16px' }}></div>
+                    <div className="skeleton-box" style={{ width: '120px', height: '32px' }}></div>
+                </div>
+            </div>
+        );
     }
 
     return (

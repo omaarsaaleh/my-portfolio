@@ -13,6 +13,8 @@
     --hover-color: rgba(54, 68, 89, 0.046);
     --hover-box-shadow-color: rgba(99, 109, 124, 0.1);
 
+    --skeleton-background-color: #f3f3f3;
+    --skeleton-color: #ddd;
     
     color-scheme: light dark;
     
@@ -23,14 +25,18 @@
 }
 
 [data-theme='dark'] {
-    --background-color: rgb(19 19 19 );
-    --background-tent-color: rgb(30 30 30);
-    --text-color: 212, 212, 212;
+    --background-color: rgb(30 30 30 );
+    --background-tent-color: rgb(40 40 40);
+    --text-color: 191, 191, 191;
     --heading-color: #fff ;
-    --accent-color: 242, 48, 48 ;
-    --shade-accent-color: rgb(94, 234, 212);
-    --hover-color: rgba(30, 30, 30, 0.4);
+    --accent-color: 204, 142, 251 ;
+    --shade-accent-color: rgb(180, 124, 222);
+    --hover-color: rgba(50, 50, 50, 0.2);
     --hover-box-shadow-color: rgba(138, 152, 172, 0.1);
+
+    --skeleton-background-color: #242424; 
+    --skeleton-color: #333334; 
+
 }
 *{
     transition: background-color 0.3s ease-in-out;
@@ -152,4 +158,20 @@ img{
 hr{
     border: none; 
     border-top: 1px solid rgba(var(--text-color), 0.3);
+}
+
+.skeleton{
+    background-color: var(--skeleton-background-color);
+}
+.skeleton-box{
+    background-color: var(--skeleton-color);
+    margin: 8px 0;
+    border-radius: 4px;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes  pulse{
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
 }

@@ -1,12 +1,14 @@
 import { useQuery } from "@tanstack/react-query";
-import { getSummary } from "../../APIs/summary";
+import { getSummaryCards } from "../../APIs/summaryCards.js";
 import './summarySection.css';
 import Loader from "../Loader/Loader";
+
+import SummaryCard from "../SummaryCard/SummaryCard.jsx";
 
 export default function SummarySection() {
     const { data: summaryData, isLoading } = useQuery({
         queryKey: ["summary"],
-        queryFn: getSummary,
+        queryFn: getSummaryCards,
         staleTime: Infinity
     });
 
@@ -16,12 +18,12 @@ export default function SummarySection() {
 
     return (
         <section className="summary-section">
-            <img src={summaryData.image.url} alt={summaryData.image.alt} className="summary-gif" />
-            <div className="summary-text">
-                {summaryData.points.map((point, index) => (
-                    <p key={index} className="text-base">{point}</p>
-                ))}
+            <div className="summary-cards">
+                 {summaryData.map((card) => (
+                    <SummaryCard key={card._key} card={card} />
+                ))} 
             </div>
+            
         </section>
     );
 }
