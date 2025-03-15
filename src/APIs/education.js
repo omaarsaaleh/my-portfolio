@@ -2,13 +2,14 @@ import client from "./sanityClient";
 
 export const getEducation = async () => {
     const query = `
-        *[_type == "education"]{
+        *[_type == "education"] | order(startYear asc){
             _id,
             school,
             degree,
             startYear,
             endYear,
             description,
+            grade,
             courses[]{
                 _key,
                 name,
