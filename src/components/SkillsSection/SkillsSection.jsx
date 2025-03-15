@@ -17,7 +17,7 @@ export default function SkillsSection(){
 
     return (
         <section className="skills-section">
-            <h3>Skills</h3>
+            <h4>Skills</h4>
             <div className="domains-wrapper">
             {
                 domainSkills.map(domain =>(

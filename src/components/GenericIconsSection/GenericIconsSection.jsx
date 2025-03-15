@@ -2,7 +2,7 @@ import IconCard from "../IconCard/IconCard";
 export default function GenericIconsSection({heading, data}){
     return(
         <section>
-            <h3>{heading}</h3>
+            <h4>{heading}</h4>
                 <div className="icons-wrapper" style={{ margin: '27px auto' }} >
                     {data.map((icon) => (
                         <div className="icon-a-wrapper" key={icon._id}>
