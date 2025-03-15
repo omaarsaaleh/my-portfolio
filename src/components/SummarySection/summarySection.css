@@ -8,53 +8,11 @@
 }
 
 
-.summary-gif{
-    width: 400px;
-    border-radius: 5px; 
-    flex: 0.25;
-}
-
-.summary-text{
+.summary-cards{
     display: flex;
-    flex-direction: column;
-    gap: 6px;
-
-}
-.summary-text p{
-    text-align: center;
-    line-height: 20px;
-    max-width: 65ch;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
-/* .summary-text{
-    text-align: center;
-    line-height: 18px;
-} */
-
-/* Medium (Tablets, Small Laptops) - 768px to 991px */
-@media (max-width: 992px) {
-    .summary-gif{
-        width: 90%;
-    }
-}
-
-/* Large (Desktops, Large Tablets) - 992px to 1199px */
-@media (min-width: 992px) and (max-width: 1200px) {
-    .summary-gif {
-        width: 300px;
-    }
-}
-
-/* Extra Large (Larger Desktops) - 1200px to 1399px */
-@media (min-width: 1200px) and (max-width: 1399px) {
-    .summary-gif {
-        width: 300px;
-    }
-}
-
-/* Extra Extra Large (Very Large Screens, TVs) - 1400px+ */
-@media (min-width: 1400px) {
-    .summary-gif {
-        width: 400px;
-    }
-}

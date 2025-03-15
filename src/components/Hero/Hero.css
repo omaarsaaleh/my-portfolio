@@ -9,27 +9,17 @@
 
 .hero-text{
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
+    width: 100%;
 }
 
 .hero-text h1{
     margin-bottom: 8px;            
 }
 .hero-text h4{
-    color: rgb(var(--accent-color));
+    color: rgb(var(--text-color));
 }
 
 .hero-text p{
     margin-bottom: 5px;
 }
-
-.hero-img{
-    width: 200px;
-    padding-left: 20px;
-}
-
-
-.hero-bio{
-    padding-top: 8px;
-}
-

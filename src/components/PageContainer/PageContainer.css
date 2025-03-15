@@ -14,13 +14,13 @@
 /* Extra Small (Phones) - Less than 576px */
 @media (max-width: 575px) {
     .page-container {
-        width: 95%;
-        padding: 0px 10px; /* Adjust padding for small screens */
+        width: 90%;
+        padding: 0px 10px; 
     }
 }
 
 /* Small (Small Tablets, Large Phones) - 576px to 767px */
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 575px) and (max-width: 768px) {
     .page-container {
         width: 95%;
         padding: 0px 12px;
@@ -28,31 +28,31 @@
 }
 
 /* Medium (Tablets, Small Laptops) - 768px to 991px */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 992px) {
     .page-container {
-        width: 90%;
+        width: 75%;
         padding: 0px 15px;
     }
 }
 
 /* Large (Desktops, Large Tablets) - 992px to 1199px */
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1200px) {
     .page-container {
-        width: 85%;
+        width: 60%;
     }
 }
 
 /* Extra Large (Larger Desktops) - 1200px to 1399px */
 @media (min-width: 1200px) and (max-width: 1399px) {
     .page-container {
-        width: 80%;
+        width: 60%;
     }
 }
 
 /* Extra Extra Large (Very Large Screens, TVs) - 1400px+ */
 @media (min-width: 1400px) {
     .page-container {
-        width: 75%;
-        max-width: 1600px; /* Increase max-width for better layout */
+        width: 60%;
+        max-width: 1600px;
     }
 }
