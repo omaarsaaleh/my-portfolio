@@ -8,7 +8,7 @@ export default function EducationCard({education}){
     return (
         <div className="education-card">
             <p className="text-sm">
-                {education.startYear} - {education.endYear}
+                {new Date(education.startYear).getFullYear()} - {new Date(education.endYear).getFullYear()}
             </p> 
             <h4>
                 {education.degree}
@@ -21,6 +21,13 @@ export default function EducationCard({education}){
             <p className="education-info text-sm">
                 {education.description}
             </p>
+
+            {
+                education.grade && 
+                <p className="education-grade text-sm">
+                    Grade: {education.grade}
+                </p>
+            }
         
             {education.courses && education.courses.length > 0 && 
                 (   
