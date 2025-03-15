@@ -4,11 +4,13 @@ import About from "./About.jsx";
 import Projects from "./Projects.jsx";
 import Education from "./Education.jsx";
 import NotFound from "./NotFound.jsx";
+import ErrorPage from "./Error.jsx";
 
 const router = createBrowserRouter([
   	{
 		path: "/",
 		element: <PageLayout />,
+		errorElement: <ErrorPage />,
 		children: [
 			{ index: true, element: <Navigate to="/about" replace /> }, 
 			{ path: "about", element: <About /> },
