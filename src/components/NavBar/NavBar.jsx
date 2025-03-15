@@ -3,7 +3,6 @@ import { Link, useLocation } from "react-router-dom";
 import { ThemeToggleButton } from "../ThemeToggleButton/ThemeToggleButton";
 import "./NavBar.css";
 
-import Logo from '../Logo/Logo.jsx'
 
 export default function NavBar() {
     const location = useLocation();
@@ -34,7 +33,7 @@ export default function NavBar() {
         <>
             <nav ref={navRef}>
                 <div className="nav-content">
-                    <Logo styling={'small-logo'}></Logo>
+                    <div className="logo">OS</div>
 
                     <ul className="nav-links">
                         {["about", "education", "projects"].map((item) => (

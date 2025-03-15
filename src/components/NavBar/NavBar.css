@@ -15,6 +15,14 @@ nav {
     padding: 0 20px;
 }
 
+.logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(var(--accent-color));
+    user-select: none;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -74,7 +82,7 @@ nav ul li a{
 
 @media (max-width: 575px) {
     nav {
-        width: 95%;
+        width: 90%;
         padding: 12px 0;
 
     }
@@ -105,28 +113,28 @@ nav ul li a{
 /* Medium (Tablets, Small Laptops) - 768px to 991px */
 @media (min-width: 768px) and (max-width: 992px) {
     nav {
-        width: 90%;
+        width: 75%;
     }
 }
 
 /* Large (Desktops, Large Tablets) - 992px to 1199px */
 @media (min-width: 992px) and (max-width: 1200px) {
     nav {
-        width: 85%;
+        width: 60%;
     }
 }
 
 /* Extra Large (Larger Desktops) - 1200px to 1399px */
 @media (min-width: 1200px) and (max-width: 1399px) {
     nav{
-        width: 80%;
+        width: 60%;
     }
 }
 
 /* Extra Extra Large (Very Large Screens, TVs) - 1400px+ */
 @media (min-width: 1400px) {
     nav {
-        width: 75%;
+        width: 60%;
         max-width: 1600px; 
     }
 }
