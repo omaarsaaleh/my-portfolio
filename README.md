@@ -1,12 +1,30 @@
-# React + Vite
+# My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my portfolio! 
+Designed to showcase my skills, projects, and education in a clean and structured way.  
 
-Currently, two official plugins are available:
+## Live Demo  
+Check it out live at: [omar-saleh.vercel.app](https://omar-saleh.vercel.app)  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key Features
 
-## Expanding the ESLint configuration
+- **Minimal & Modern Design**: Focused on simplicity and usability.
+- **Fully Responsive**: Works across all devices.
+- **Dark & Light Mode**: Toggle between themes.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+- **Frontend:** React JS, CSS
+- **Backend/CMS:** Sanity
+- **Deployment:** Vercel
+
+## Preview
+
+  <p align="center"><img src="https://github.com/user-attachments/assets/000abbde-e7e2-47bd-b8a1-b526b5b9d347" width="45%"><p/>
+  <p align="center"><img src="https://github.com/user-attachments/assets/4c3012ee-9b4f-459b-9265-eb387381d4ee" width="45%"><p/>
+
+
+
+## Inquiries
+If you have any questions or want to connect, feel free to reach out!
+
+---
